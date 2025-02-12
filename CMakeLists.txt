@@ -57,9 +57,7 @@ target_include_directories(pwm_irq PRIVATE
 )
 
 # Add any user requested libraries
-target_link_libraries(pwm_irq 
-        
-        )
+target_link_libraries(pwm_irq pico_stdlib hardware_pwm)
 
 pico_add_extra_outputs(pwm_irq)
 
